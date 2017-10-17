@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.shopping.chengzi.myshoppingcart.MainActivity">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_tab_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/fl_tab_bar"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/fl_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_tab_bar"
+                android:layout_width="match_parent"
+                android:paddingBottom="10px"
+                android:paddingTop="10px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/tab_menu_item"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_menu_channel"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/rb_classify"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_message"
+                    android:text="分类" />
+
+                <RadioButton
+                    android:id="@+id/rb_shopping_cart"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_better"
+                    android:text="购物车" />
+
+                <RadioButton
+                    android:id="@+id/rb_my"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_setting"
+                    android:text="我的" />
+
+            </RadioGroup>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:visibility="visible"
+            android:id="@+id/rl_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/tv_main_cart_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_cart_red_shape"
+                android:gravity="center"
+                android:padding="3px"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="20px" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

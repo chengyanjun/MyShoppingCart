@@ -1,0 +1,162 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_img" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/rg_goods_detail"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_real_order_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/background_red"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_all_order_red_line"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/background_shade"
+                android:orientation="horizontal" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_wait_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_payment_red_line"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_order_already_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_already_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="已付款"
+                android:textColor="@color/text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/rl_real_order_already_payment_red_line"
+                android:layout_width="140px"
+                android:layout_height="4px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_order_wait_receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_order_wait_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_receive_red_line"
+                android:layout_width="140px"
+                android:layout_height="4px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:orientation="horizontal" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_order_wait_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_wait_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="待评价"
+                android:textColor="@color/text"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_evaluate_red_line"
+                android:layout_width="140px"
+                android:layout_height="4px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/real_order_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

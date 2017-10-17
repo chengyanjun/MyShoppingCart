@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shopping.chengzi.myshoppingcart">
+
+    <!-- 轮播图权限2个 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- ui设计的尺寸 (引用自张鸿洋适配方案) -->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScrollTestActivity"
+            android:label="风景"
+            android:logo="@drawable/example" />
+        <activity android:name=".activity.user_info.LoginActivity" />
+        <activity android:name=".activity.user_info.UserRegisterActivity" />
+        <activity android:name=".activity.user_info.ForgetPasswordActivity" />
+        <activity android:name=".activity.user_info.ResetPasswordActivity" />
+        <activity android:name=".activity.user_info.AccountManageActivity" />
+        <activity android:name=".activity.user_info.SettingActivity" />
+        <activity android:name=".activity.user_info.UserSettingActivity" />
+        <activity android:name=".activity.GoodsDetailActivity" />
+        <activity android:name=".fragment.goods_detail.GoodsDetailsBigPic" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.ClassifyGoodsListActivity" />
+        <activity android:name=".activity.GoodsAndShopsFocusActivity" />
+        <activity android:name=".activity.order.ShowOrderActivity" />
+        <activity android:name=".activity.user_info.AboutAppActivity" />
+        <activity android:name=".activity.ShopDetailActivity"></activity>
+    </application>
+
+</manifest>

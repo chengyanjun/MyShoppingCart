@@ -1,0 +1,29 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.shopping.chengzi.myshoppingcart.fragment.GoodsFoucsFragment">
+
+    <include layout="@layout/wait_progress_layout" />
+
+    <include layout="@layout/goods_focus_empty_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_tint"
+        android:padding="14px"
+        android:text="近期收藏的商品"
+        android:textSize="24px" />
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rl_goods_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

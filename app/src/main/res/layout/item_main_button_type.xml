@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20px"
+    android:paddingTop="20px">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_button1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="收藏宝贝"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/iv_home_button1"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_button1" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_home_button2"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_button2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_button2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="收藏店铺"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_button3"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="订单查询"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/iv_home_button3"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_button3" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_home_button4"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_button4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_button4"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="分类"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_chong_zhi"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="充值中心"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/iv_chong_zhi"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_btn6" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_home_money"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_btn5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_money"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="领金币"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_family"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="到家"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/iv_home_family"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_btn4" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_home_item8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_home_foot"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_btn7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_foot"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10px"
+                android:text="足迹"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

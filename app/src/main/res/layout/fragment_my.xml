@@ -1,0 +1,545 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shade"
+    android:orientation="vertical"
+    tools:context="com.shopping.chengzi.myshoppingcart.fragment.FragmentMy">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/background_shade">
+
+        <TextView
+            android:id="@+id/tv_account_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/xiaoxi" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.shopping.chengzi.myshoppingcart.widget.SpringBackScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/ll_account_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_shade"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.shopping.chengzi.myshoppingcart.widget.CirclrImageView
+                        android:id="@+id/user_head_pic"
+                        android:layout_width="140px"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="40px"
+                        android:src="@mipmap/test_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/user_head_pic"
+                        android:paddingBottom="30px"
+                        android:text="阿阳210"
+                        android:textColor="@color/white"
+                        android:textSize="36px" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="70px"
+                        android:background="@mipmap/my_account_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10px">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/account_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:gravity="center"
+                            android:text="账户管理"
+                            android:textColor="@color/white"
+                            android:textSize="24px" />
+
+                        <ImageView
+                            android:layout_width="20px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20px"
+                            android:src="@mipmap/white_you" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_no_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_shade"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <com.shopping.chengzi.myshoppingcart.widget.CirclrImageView
+                        android:id="@+id/no_login_user_head_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/default_user_portrait" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:text="登录/注册"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <include layout="@layout/item_my" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/div_white" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:background="@drawable/button_rec">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/top_my_order"
+                    android:gravity="center"
+                    android:text="我的订单"
+                    android:textColor="@color/text"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/iv_right"
+                    android:gravity="center"
+                    android:text="查看全部订单"
+                    android:textSize="26px" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/right_key_small" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <!--待付款-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_wait_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rec"
+                    android:gravity="center">
+
+                    <com.zhy.autolayout.AutoFrameLayout
+                        android:id="@+id/fl_wait_payment"
+                        android:layout_width="80px"
+                        android:layout_height="70px"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="10px">
+
+                        <ImageView
+                            android:id="@+id/wait_for_pay"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="5dp"
+                            android:src="@mipmap/daifukuan" />
+
+                        <TextView
+                            android:id="@+id/wait_for_pay_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/fragment_my_wait_for_pay_num"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+                    </com.zhy.autolayout.AutoFrameLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fl_wait_payment"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6px"
+                        android:text="待付款"
+                        android:textColor="@color/text"
+                        android:textSize="24px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--待发货-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_already_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rec"
+                    android:gravity="center">
+
+                    <com.zhy.autolayout.AutoFrameLayout
+                        android:id="@+id/fl_receive"
+                        android:layout_width="80px"
+                        android:layout_height="70px"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="10px">
+
+                        <ImageView
+                            android:id="@+id/already_complete"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="10px"
+                            android:src="@mipmap/daifahuo" />
+
+                        <TextView
+                            android:id="@+id/already_complete_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/fragment_my_wait_for_pay_num"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+                    </com.zhy.autolayout.AutoFrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fl_receive"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6px"
+                        android:text="已付款"
+                        android:textColor="@color/text"
+                        android:textSize="24px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--待收货-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_wait_for_receive_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rec"
+                    android:gravity="center">
+
+                    <com.zhy.autolayout.AutoFrameLayout
+                        android:id="@+id/fl_evaluate"
+                        android:layout_width="80px"
+                        android:layout_height="70px"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="10px">
+
+                        <TextView
+                            android:id="@+id/wait_for_send_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/fragment_my_wait_for_pay_num"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/wait_for_send"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="10px"
+                            android:src="@mipmap/daishouhuo" />
+                    </com.zhy.autolayout.AutoFrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fl_evaluate"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6px"
+                        android:text="待收货"
+                        android:textColor="@color/text"
+                        android:textSize="24px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--待评价-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_wait_for_evaluate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rec"
+                    android:gravity="center">
+
+                    <com.zhy.autolayout.AutoFrameLayout
+                        android:id="@+id/fl_fanxiu"
+                        android:layout_width="80px"
+                        android:layout_height="70px"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="10px">
+
+
+                        <TextView
+                            android:id="@+id/wait_for_receive_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/fragment_my_wait_for_pay_num"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/wait_for_receive"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="10px"
+                            android:src="@mipmap/daipingjia" />
+                    </com.zhy.autolayout.AutoFrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fl_fanxiu"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6px"
+                        android:text="待评价"
+                        android:textColor="@color/text"
+                        android:textSize="24px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--返修/退货-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_wait_for_tui_huo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rec"
+                    android:gravity="center">
+
+
+                    <com.zhy.autolayout.AutoFrameLayout
+                        android:id="@+id/fl_tuihuo"
+                        android:layout_width="80px"
+                        android:layout_height="70px"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="10px">
+
+                        <ImageView
+                            android:id="@+id/iv_wait_for_tui_huo"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="10px"
+                            android:src="@mipmap/tuihuo" />
+
+                        <TextView
+                            android:id="@+id/tv_wait_for_tui_huo_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/fragment_my_wait_for_pay_num"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+                    </com.zhy.autolayout.AutoFrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fl_tuihuo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6px"
+                        android:text="退款/退货"
+                        android:textColor="@color/text"
+                        android:textSize="24px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/div_white" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_must_tools"
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:background="@drawable/button_rec">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/top_my_order"
+                    android:gravity="center"
+                    android:text="必备工具"
+                    android:textColor="@color/text"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/iv_right_enter"
+                    android:gravity="center"
+                    android:text="查看更多工具"
+                    android:textSize="26px" />
+
+                <ImageView
+                    android:id="@+id/iv_right_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/right_key_small" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <com.shopping.chengzi.myshoppingcart.widget.GridViewInScrollView
+                android:id="@+id/gv_my_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/line"
+                android:horizontalSpacing="1px"
+                android:numColumns="4"
+                android:verticalSpacing="1px">
+
+            </com.shopping.chengzi.myshoppingcart.widget.GridViewInScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/div_white" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:background="@drawable/button_rec">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/top_my_order"
+                    android:gravity="center"
+                    android:text="我的互动"
+                    android:textColor="@color/text"
+                    android:textSize="32px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.shopping.chengzi.myshoppingcart.widget.SpringBackScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

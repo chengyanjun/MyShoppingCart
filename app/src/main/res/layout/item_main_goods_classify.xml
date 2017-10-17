@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/tv_main_classify_view"
+        android:layout_width="2px"
+        android:layout_height="match_parent"  />
+
+    <TextView
+        android:textSize="26px"
+        android:id="@+id/tv_main_classify_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="40px"
+        android:paddingTop="40px"
+        android:text="母婴儿童"
+        android:textColor="@color/text" />
+
+</com.zhy.autolayout.AutoLinearLayout>

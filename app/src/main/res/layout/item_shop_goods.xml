@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_rec"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20px"
+            android:scaleType="fitXY" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_marginLeft="10px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/goods_pic"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/text"
+                android:textSize="32px" />
+
+            <TextView
+                android:paddingTop="10px"
+                android:id="@+id/tv_focus_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_name"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textSize="24px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40px"
+            android:src="@mipmap/gengduo" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_tint" />
+
+</com.zhy.autolayout.AutoLinearLayout>

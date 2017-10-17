@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_right_classify_goods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_rec"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center_horizontal"
+        android:src="@mipmap/milk" />
+
+
+    <TextView
+        android:id="@+id/tv_classify_detail_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="10px"
+        android:text="哈哈"
+        android:textSize="24px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

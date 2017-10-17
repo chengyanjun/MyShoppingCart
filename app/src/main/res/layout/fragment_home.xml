@@ -1,0 +1,271 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_tint"
+    android:orientation="vertical"
+    tools:context="com.shopping.chengzi.myshoppingcart.fragment.FragmentHome">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/background_shade"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:src="@mipmap/home" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_search_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:paddingTop="20px"
+                    android:src="@mipmap/white_search" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_search_home"
+                    android:gravity="center_vertical"
+                    android:paddingTop="20px"
+                    android:text="时尚春装"
+                    android:textColor="@color/white" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@color/white" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/xiaoxi" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.shopping.chengzi.myshoppingcart.widget.SpringBackScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="280px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <include layout="@layout/item_main_button_type" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="90px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/toutiao" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/line" />
+
+                <ViewFlipper
+                    android:id="@+id/vf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:autoStart="true"
+                    android:background="#fff"
+                    android:flipInterval="2000"
+                    android:inAnimation="@anim/anim_marquee_in"
+                    android:outAnimation="@anim/anim_marquee_out" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/div_white" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="170px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/limit_time" />
+
+                <TextView
+                    android:textSize="28px"
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/iv_time"
+                    android:gravity="center"
+                    android:text="16点场"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <!--倒计时-->
+                <com.shopping.chengzi.myshoppingcart.widget.countdowntimer.MainDownTimerView
+                    android:id="@+id/tv_time_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_time"
+                    android:layout_centerInParent="true"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/iv_red_right"
+                    android:gravity="center"
+                    android:text="该剁手时不要停"
+                    android:textColor="@color/background_red"
+                    android:textSize="26px" />
+
+                <ImageView
+                    android:id="@+id/iv_red_right"
+                    android:layout_width="30px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/red_right_jian" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_discount_goods"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/div_white" />
+
+
+            <com.shopping.chengzi.myshoppingcart.widget.GridViewInScrollView
+                android:id="@+id/gv_home_goods_classify"
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:background="@color/div_white"
+                android:horizontalSpacing="2px"
+                android:numColumns="2"
+                android:verticalSpacing="2px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#F4F4F4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/zuojiantou" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/heart" />
+
+                <TextView
+                    android:textSize="28px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="10px"
+                    android:gravity="center"
+                    android:text="猜你喜欢"
+                    android:textColor="@color/background_red" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/youjiantou" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <com.shopping.chengzi.myshoppingcart.widget.GridViewInScrollView
+
+                android:id="@+id/gv_home_goods_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+                android:horizontalSpacing="6px"
+                android:numColumns="2"
+                android:verticalSpacing="6px">
+
+            </com.shopping.chengzi.myshoppingcart.widget.GridViewInScrollView>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.shopping.chengzi.myshoppingcart.widget.SpringBackScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

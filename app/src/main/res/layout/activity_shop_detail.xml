@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shop_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shopping.chengzi.myshoppingcart.activity.ShopDetailActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/background_shade"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:src="@mipmap/white_back" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_search_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:paddingTop="20px"
+                    android:src="@mipmap/white_search" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_search_home"
+                    android:gravity="center_vertical"
+                    android:paddingTop="20px"
+                    android:text="搜索店铺的商品"
+                    android:textColor="@color/white" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@color/white" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:src="@mipmap/white_more_su" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.shopping.chengzi.myshoppingcart.view.StickyNavLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:id="@+id/iv_shop_detail_background"
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/test_pic" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="55dp">
+
+                <ImageView
+                    android:id="@+id/iv_shop_detail_logo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/shop_logo" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_shop_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_shop_detail_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/iv_shop_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="伊利官方旗舰店"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_shop_detail_enter"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/ll_shop_detail"
+                    android:src="@mipmap/shop_youjiantou" />
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_shop_detail_guanzhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="3dp"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:id="@+id/iv_shop_detail_guanzhu_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/iv_shop_detail_guanzhu"
+                        android:layout_marginTop="5dp"
+                        android:text="3人关注"
+                        android:textColor="@color/white" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background_tint"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/rl_real_order_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="店铺首页"
+                    android:textColor="@color/background_tint_red"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_all_order_red_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/background_tint_red"
+                    android:orientation="horizontal" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_wait_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="全部宝贝"
+                    android:textColor="@color/text_gray"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_order_wait_payment_red_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/rl_order_already_payment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_already_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="新品上架"
+                    android:textColor="@color/text_gray"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/rl_real_order_already_payment_red_line"
+                    android:layout_width="140px"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/rl_shop_dong_tai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_dong_tai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="店铺动态"
+                    android:textColor="@color/text_gray"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/rl_shop_dong_tai_line"
+                    android:layout_width="140px"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.shopping.chengzi.myshoppingcart.view.StickyNavLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

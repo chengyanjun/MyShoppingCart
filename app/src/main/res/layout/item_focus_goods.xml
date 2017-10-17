@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focus_goods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_rec"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:orientation="horizontal"
+        android:paddingBottom="5px"
+        android:paddingRight="10px"
+        android:paddingTop="5px">
+
+        <ImageView
+            android:id="@+id/iv_focus_goods_img"
+            android:layout_width="260px"
+            android:layout_height="260px"
+            android:scaleType="fitXY" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px"
+            android:paddingTop="20px">
+
+            <TextView
+                android:textSize="28px"
+                android:id="@+id/tv_focus_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:textColor="@color/text" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="28px"
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="￥"
+                    android:textColor="@color/background_red" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_focus_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/tv_money"
+                    android:text=""
+                    android:textColor="@color/background_red"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@+id/iv_more"
+                    android:background="@drawable/border_line_red"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="看相似"
+                    android:textColor="@color/background_red"
+                    android:textSize="24px" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10px"
+                    android:src="@mipmap/gengduo" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="280px"
+        android:background="@color/background_tint" />
+
+</com.zhy.autolayout.AutoLinearLayout>
